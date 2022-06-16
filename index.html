@@ -1,135 +1,58 @@
-<!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="app.css">
-    <title>Project2</title>
-  </head>
-  <body>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-      <a href="#" class="navbar-brand">CANDY</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collaspse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">TICKETS</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <section class="contanier-fluid px-0">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
-            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
-            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
-            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
-            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
-            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
-            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
-            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid" src="imgs/hand2.png" alt="">
-        </div>
-      </div>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Keeper</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-    <section class="contanier-fluid px-0">
-      <div class="row align-items-center content">
-        <div class="col-md-6 order-2 order-md-1">
-          <img class="img-fluid" src="imgs/milk.png" alt="">
-        </div>
-        <div class="col-md-6 text-center order-1 order-md-2">
-          <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb mb-5 md-md-0">
-              <h2>MUSEUM OF CANDY</h2>
-              <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat nihil ex numquam dolores!
-                Exercitationem deleniti sed repellat eum suscipit animi aut dicta, facere, ratione alias, voluptatem culpa omnis
-                itaque?
-                Eum labore, cumque aperiam, aliquid vel ipsam nihil quae mollitia natus minima nisi nam commodi accusantium ratione
-                quos, fugit illo unde qui autem facilis accusamus! Sint eligendi provident voluptas corrupti.
-              </p>
+</head>
+<body>
+  <section class="section">
+
+  <div class="container">
+    <div class="columms">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="card-imgage">
+            <figure class="img is-2by1">
+              <img src="tabletennis.jpg" alt="">
+            </figure>
+          </div>
+          <header class="card-header">
+            <p class="card-header-title">
+              Ping Pong Score Keeper
+            </p>
+            
+          </header>
+          <div class="card-content">
+            <div class="content">
+                <h1 class="title is-1"><span id="p1Display">0</span> to <span id=p2Display>0</span></h1>
+                <p class="subtitle">Use the buttons below to keep score.</p>
+                <label for="playto" class="label is-large is-inline">Playing To</label>
+                <div class="select is-rounded">
+                  <select name="" id="playto">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                    <option value="11">11</option>
+                  </select>
+                </div>
             </div>
           </div>
+          <footer class="card-footer">
+            <button id ="p1Button" class="is-primary button card-footer-item is-large">+ 1 Player One</button>
+            <button id="p2Button" class="is-info button card-footer-item is-large">+ 2 Player One</button>
+            <button id="reset" class="is-danger button card-footer-item is-large">reset</button>
+          </footer>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+  <script src="app.js"></script>
+</body>
 
-    <section>
-      <div class="row align-items-center content">
-        <div class="col-md-6 text-center order-1 order-md-1">
-          <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb mb-5 md-md-0">
-              <h2>MUSEUM OF CANDY</h2>
-              <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat nihil ex numquam
-                dolores!
-                Exercitationem deleniti sed repellat eum suscipit animi aut dicta, facere, ratione alias, voluptatem culpa
-                omnis
-                itaque?
-                Eum labore, cumque aperiam, aliquid vel ipsam nihil quae mollitia natus minima nisi nam commodi accusantium
-                ratione
-                quos, fugit illo unde qui autem facilis accusamus! Sint eligendi provident voluptas corrupti.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 order-2 order-md-2">
-          <img class="img-fluid" src="imgs/gumball.png" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="contanier-fluid px-0">
-      <div class="row align-items-center content">
-        <div class="col-md-6 order-2 order-md-1">
-          <img class="img-fluid" src="imgs/sprinkles.png" alt="">
-        </div>
-        <div class="col-md-6 text-center order-1 order-md-2">
-          <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb mb-5 md-md-0">
-              <h2>MUSEUM OF CANDY</h2>
-              <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat nihil ex numquam
-                dolores!
-                Exercitationem deleniti sed repellat eum suscipit animi aut dicta, facere, ratione alias, voluptatem culpa
-                omnis
-                itaque?
-                Eum labore, cumque aperiam, aliquid vel ipsam nihil quae mollitia natus minima nisi nam commodi accusantium
-                ratione
-                quos, fugit illo unde qui autem facilis accusamus! Sint eligendi provident voluptas corrupti.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
-  </body>
 </html>
